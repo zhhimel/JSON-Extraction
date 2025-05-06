@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json({ limit: '10mb' }));
 
-app.post('/extract-json', async (req, res) => {
+app.post('/', async (req, res) => {
   try {
     const { imageBase64 } = req.body;
 
